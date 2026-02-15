@@ -18,7 +18,14 @@ The goal of this project is to classify tumors as malignant (M) or benign (B) us
 - XGBoost
 
 ## Comparison Table (Evaluation Metrics)
-{results_df.to_markdown(index=False)}
+| Model               |   Accuracy |      AUC |   Precision |   Recall |       F1 |      MCC |
+|:--------------------|-----------:|---------:|------------:|---------:|---------:|---------:|
+| Logistic Regression |   0.95614  | 0.997707 |    0.975    | 0.906977 | 0.939759 | 0.906811 |
+| Decision Tree       |   0.947368 | 0.94399  |    0.930233 | 0.930233 | 0.930233 | 0.887979 |
+| KNN                 |   0.95614  | 0.995906 |    1        | 0.883721 | 0.938272 | 0.908615 |
+| Naive Bayes         |   0.973684 | 0.998362 |    1        | 0.930233 | 0.963855 | 0.944733 |
+| Random Forest       |   0.964912 | 0.995414 |    0.97561  | 0.930233 | 0.952381 | 0.925285 |
+| XGBoost             |   0.95614  | 0.990829 |    0.952381 | 0.930233 | 0.941176 | 0.906379 |
 
 ## Observations on Model Performance
 - Logistic Regression: Strong baseline with high accuracy and excellent AUC.
